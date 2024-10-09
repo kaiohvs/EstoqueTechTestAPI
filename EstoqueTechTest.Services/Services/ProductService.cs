@@ -37,6 +37,8 @@ namespace EstoqueTechTest.Services.Services
             {
                 var product = await _repository.GetByIdAsync(id);
                 if(product == null) { return false; }
+
+                await _repository.DeleteAsync(id);
                 return true;
             }
             catch (Exception ex)

@@ -26,7 +26,7 @@ namespace EstoqueTechTest.API.Controllers
                     return NotFound();
                 }
 
-                return Ok(product);
+                return Ok(product.Result);
             }
             catch (Exception ex)            {
                 
