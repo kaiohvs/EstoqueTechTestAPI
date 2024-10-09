@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EstoqueTechTest.Data\EstoqueTechTest.Data.csproj" />
+    <ProjectReference Include="..\EstoqueTechTest.Domain\EstoqueTechTest.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
